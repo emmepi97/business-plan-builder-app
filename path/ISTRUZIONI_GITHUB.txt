@@ -1,0 +1,25 @@
+BUSINESS PLAN BUILDER 0.11.0 - PUBBLICAZIONE GITHUB PAGES
+
+IMPORTANTE: questa cartella si chiama path solo per raccogliere TUTTI i file.
+NON caricare la cartella path come sottocartella del repository.
+
+Procedura:
+1. Apri questa cartella path sul computer.
+2. Seleziona TUTTO il suo contenuto, inclusa la cartella nascosta .github.
+3. Carica il contenuto direttamente nella RADICE del repository GitHub.
+   La radice del repository deve contenere direttamente:
+     .github/workflows/deploy.yml
+     src/
+     index.html
+     package.json
+     vite.config.js
+     README.md
+4. In GitHub vai in Settings > Pages > Build and deployment > Source:
+   seleziona GitHub Actions.
+5. Vai in Actions e controlla il workflow "Deploy to GitHub Pages".
+6. Al termine, apri l'URL mostrato in Settings > Pages.
+
+NON deve risultare un percorso repository/path/src o repository/path/.github.
+Il percorso corretto è repository/src e repository/.github.
+
+Se carichi path come cartella annidata, il workflow non sarà trovato alla posizione richiesta da GitHub.
